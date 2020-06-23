@@ -23,7 +23,7 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
 
-    wp_enqueue_style('sage/fontawesome.css', get_template_directory_uri() . '/resources/assets/fonts/css/all.min.css', false, null);
+    wp_enqueue_style('sage/fontawesome.css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css', false, null);
     wp_enqueue_style('sage/app.css', asset('styles/app.css')->uri(), false, null);
 }, 100);
 
@@ -78,6 +78,21 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support('post-thumbnails');
+
+    /**
+     * Add support for core custom logo.
+     *
+     * @link https://codex.wordpress.org/Theme_Logo
+     */
+    add_theme_support(
+        'custom-logo',
+        array(
+            'height' => 190,
+            'width' => 190,
+            'flex-width' => false,
+            'flex-height' => false,
+        )
+    );
 
     /**
      * Add theme support for Wide Alignment

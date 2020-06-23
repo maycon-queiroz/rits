@@ -9,9 +9,9 @@
 | our theme. We will simply require it into the script here so that we
 | don't have to worry about manually loading any of our classes later on.
 |
-*/
+ */
 
-if (! file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
+if (!file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
     wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
 }
 
@@ -27,13 +27,13 @@ require $composer;
 | theme. Simply add (or remove) files from the array below to change what
 | is registered alongside Sage.
 |
-*/
+ */
 
-collect(['helpers', 'setup', 'filters', 'admin'])
+collect(['helpers', 'setup', 'filters', 'admin', 'init'])
     ->each(function ($file) {
         $file = "app/{$file}.php";
 
-        if (! locate_template($file, true, true)) {
+        if (!locate_template($file, true, true)) {
             wp_die(
                 sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
             );
@@ -50,7 +50,7 @@ collect(['helpers', 'setup', 'filters', 'admin'])
 | that we will need to initialize the necessary service providers built in
 | for Sage when booting.
 |
-*/
+ */
 
 add_theme_support('sage');
 
@@ -63,6 +63,6 @@ add_theme_support('sage');
 | Acorn will provide us support for Blade templating as well as the ability
 | to utilize the Laravel framework and its beautifully written packages.
 |
-*/
+ */
 
 new Roots\Acorn\Bootloader();

@@ -29,7 +29,6 @@ $landing->columns()->populate('rating', function ($column, $post_id) {
     echo get_post_meta($post_id, 'rating') . '/10';
 });
 
-
 // Set sortable columns
 $landing->columns()->sortable([
     'price' => ['price', true],
@@ -44,8 +43,6 @@ $landing->register();
 
 // Create the genre Taxonomy
 $campaign = new Taxonomy('campaign');
-
-
 
 // Register the taxonomy to WordPress
 $campaign->register();
