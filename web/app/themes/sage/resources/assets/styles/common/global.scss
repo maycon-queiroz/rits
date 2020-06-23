@@ -11,7 +11,8 @@ a {
  * @see https://git.io/JeyD6
  */
 
-@each $color-name, $color-value in $theme-colors {
+@each $color-name,
+$color-value in $theme-colors {
   .has-#{$color-name}-color {
     color: $color-value;
   }
@@ -19,4 +20,67 @@ a {
   .has-#{$color-name}-background-color {
     background-color: $color-value;
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+
+}
+
+:root,
+html,
+body {
+  font-size: 10px !important;
+  height: 100vh;
+  font-family: Muli, sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  font-weight:bold;
+  color: $color-dark;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  font-weight:bold;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  font-weight:bold;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
 }

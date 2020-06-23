@@ -18,19 +18,79 @@
 
   &.is-style-outline {
     .wp-block-button__link {
-      @include button-outline-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
-      );
+      @include button-outline-variant(map-get($theme-colors, 'primary'),
+        map-get($theme-colors, 'light'));
     }
   }
 
   &.is-style-solid {
     .wp-block-button__link {
-      @include button-variant(
-        map-get($theme-colors, 'primary'),
-        map-get($theme-colors, 'light')
-      );
+      @include button-variant(map-get($theme-colors, 'primary'),
+        map-get($theme-colors, 'light'));
     }
   }
+}
+
+
+
+.btn {
+  width: 300px;
+  padding: 19px 27px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: $color-pink;
+  box-shadow: 10px 10px 0px 0px $color-violet;
+
+  span{
+    font-size:1.6rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+}
+
+.btn:hover,
+.btn.active {
+  box-shadow: 4px 4px 0px 0px $color-violet;
+}
+
+.span-phone {
+  background-image: url("../../resources/assets/icons/phone.svg");
+}
+
+.span-man {
+  background-image: url("../../resources/assets/icons/man.svg");
+}
+
+.span-video {
+  background-image: url("../../resources/assets/icons/video.svg");
+}
+
+.span-microscop {
+  background-image: url("../../resources/assets/icons/microscop.svg");
+}
+
+.span-light {
+  background-image: url("../../resources/assets/icons/light.svg");
+}
+
+.span-table {
+  background-image: url("../../resources/assets/icons/table.svg");
+}
+
+.span-medle {
+  background-image: url("../../resources/assets/icons/medle.svg");
+}
+
+.span-company {
+  background-image: url("../../resources/assets/icons/company.svg");
+}
+
+.span-google {
+  background-image: url("../../resources/assets/icons/google.svg");
 }

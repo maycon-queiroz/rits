@@ -1,7 +1,60 @@
 /**
  * Header
  */
+body {
 
-.brand {
-  font-weight: bold;
+  .header {
+    width: 78%;
+    height: 123px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0px auto;
+
+    .logo-header {
+
+      img {
+        width: 180px;
+      }
+
+    }
+
+    ul.nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      align-self: flex-end;
+
+
+      li {
+        display: inline-flex;
+        list-style: none;
+
+        font-size: 1.8rem;
+        font-family: Muli, sans-serif;
+        cursor: pointer;
+
+        a {
+          font-size: 1.8rem;
+          font-family: Muli, sans-serif;
+          text-decoration: none;
+          color: $color-dark;
+        }
+
+        a:hover {
+          text-decoration: none;
+        }
+
+      }
+
+      li+li {
+        margin-left: 80px;
+      }
+
+    }
+
+  }
+
 }

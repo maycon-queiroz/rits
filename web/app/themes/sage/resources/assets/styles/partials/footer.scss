@@ -1,0 +1,233 @@
+div.footer {
+  width: 100%;
+  height: 1219px;
+
+  background-color: #2A2E31;
+  color: #fff;
+
+  header {
+    padding-top: 204px;
+    margin-bottom: 100px;
+
+    h1 {
+      color: #ffffff;
+    }
+  }
+
+  .footer-section {
+    margin-bottom: 164px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .footer-selection {
+      width: 90%;
+      max-width: 370px;
+
+      .button {
+        background-color: $color-pink;
+
+        +.button {
+
+          background-color: $color-lightgreen;
+
+          +.button {
+
+            background-color: $color-lightblue;
+          }
+        }
+      }
+
+      .button {
+        width: 100%;
+        height: 115px;
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+        font-size: 2.8rem;
+
+        color: #5F676C;
+
+        text-decoration: none;
+        margin-bottom: 4px;
+
+        transition: 600ms;
+
+        span {
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          background-color: #40464A;
+        }
+
+        span:hover,
+        span.active {
+          background-color: #fff;
+          transform: translate(-4%, -10%);
+        }
+
+      }
+    }
+
+    .footer-ul ul {
+      width: 770px;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 5px 30px;
+
+      li {
+        width: 370px;
+        height: 111px;
+        list-style: none;
+        background-color: #1d2327;
+
+        color: #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 1.8rem;
+
+        strong {
+          color: #EF426F;
+          font-size: 1.4rem;
+
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 321px;
+
+  background-color: #f2f2f2;
+  position: relative;
+
+  .footer-main {
+    height: 193px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    position: relative;
+
+    top: -86px;
+    box-shadow: 0 1px 7px -4px black;
+
+    article {
+      padding: 0 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #f2f2f2;
+      font-size: 2.8rem;
+      font-weight: bolder;
+
+
+      i.fas,
+      i.far,
+      i.fab {
+        margin-right: 40px;
+        font-size: 6.0rem;
+        color: #a2a2a2;
+      }
+    }
+
+    article:hover {
+      background-color: #f2f2f2;
+
+      i.fas,
+      i.far {
+        color: $color-lightblue;
+      }
+
+      i.fab {
+        color: $color-lightgreen;
+      }
+    }
+  }
+
+  .footer-main-content {
+    margin-top: 30x;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-main-logo-secundary ul {
+      width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+
+        i.fab {
+          color: #a2a2a2;
+          font-size: 1.6rem;
+        }
+      }
+
+      li:hover i.fab {
+        color: #000;
+      }
+    }
+  }
+
+  .footer-main-copyright {
+    font-size: 1.3rem;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+div.icon-what {
+  position: fixed;
+  bottom: 50px;
+  right: 5%;
+  z-index: 30;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #fff;
+
+  border-radius: 50%;
+
+  z-index: 100;
+  box-shadow: 0px 2px 6px -2px black;
+
+  cursor: pointer;
+
+  .icon-whatssapp {
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../../resources/assets/images/logo-whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top: 30px - 12px;
+    left: 30px - 12px;
+
+    z-index: 60;
+  }
+}

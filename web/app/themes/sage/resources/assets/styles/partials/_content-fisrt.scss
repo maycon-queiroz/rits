@@ -1,0 +1,114 @@
+//*****************************************
+//
+//    SECTION CONTENT FIRST
+//
+//*****************************************
+
+main{
+.main-content-first {
+    margin-top: 10px;
+    height: 540px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    margin: 0 auto;
+    background-color: $color-lightgreen;
+
+    .main-content-first-div {
+      width: 90%;
+      max-width: 1170px;
+      height: 421px;
+      position: absolute;
+      bottom: -79px;
+
+      display: flex;
+      z-index: 2;
+
+      .main-content-first-article {
+        background-color: #fff;
+        width: 770px;
+        height: 421px;
+
+        box-shadow: 1px 1px 5px -3px black;
+        position: relative;
+
+        .span-vertical-bar {
+          position: absolute;
+          left: 0;
+          width: 10px;
+          height: 90px;
+          top: 80px;
+
+          background-color: $color-violet;
+        }
+
+        header {
+          width: 370px;
+          margin: 80px 0 0 100px;
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+            margin-bottom: 30px;
+            color: $color-pink;
+          }
+        }
+      }
+
+      .main-content-first-img {
+        width: 570px;
+        height: 341px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        overflow: hidden;
+
+        box-shadow: 1px -3px 5px -3px black;
+
+        .span-cicle {
+          width: 100px;
+          height: 100px;
+
+          position: absolute;
+          top: 40%;
+          left: 40%;
+
+          border: 8px solid $color-pink;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 50%;
+          z-index: 50;
+
+          .span-arrowright {
+            width: 0;
+            height: 0;
+            margin-top: 2%;
+            margin-left: 10%;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-left: 25px solid #fff;
+            border-radius: 5px;
+          }
+        }
+
+        img:hover {
+          transition: 600ms;
+          transform: scale(1.05);
+          filter: brightness(130%);
+        }
+      }
+
+      .main-content-first-img:hover .span-cicle {
+        background-color: $color-pink;
+      }
+    }
+  }
+}

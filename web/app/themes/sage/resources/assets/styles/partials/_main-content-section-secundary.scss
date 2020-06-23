@@ -1,0 +1,126 @@
+main{
+
+    //*****************************************
+  //
+  //    SECTION CONTENT SECUNDARY
+  //
+  //*****************************************
+
+  .main-content-section-secundary {
+    width: 100%;
+    height: 758px;
+    position: relative;
+
+    header {
+      padding-top: 140px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: relative;
+      margin-bottom: 80px;
+
+      h1 {
+        width: 80%;
+        max-width: 585px;
+      }
+
+      img {
+        position: absolute;
+        top: -20px;
+        right: 0;
+      }
+    }
+
+    section.content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+      gap: 30px;
+
+      .main-content-section-article-sec {
+        max-width: 370px;
+        height: 525px;
+        background-color: #fff;
+
+        padding: 40px 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        box-shadow: 1px 0px 5px -3px black;
+
+        h3 {
+          padding: 20px 40px 40px;
+        }
+
+        hr {
+          width: 100%;
+          margin: 20px 0;
+          border: 1px #f2f2f2 solid;
+        }
+
+        p {
+          margin: 30px 0;
+          line-height: 1.4;
+        }
+
+        img {
+          margin: 20px auto;
+          max-height: 75px;
+        }
+
+        span.bar {
+          width: 90%;
+          max-width: 290px;
+          height: 5px;
+          position: absolute;
+          bottom: -3px;
+          border-radius: 5px;
+        }
+
+      }
+    }
+
+    
+    section.content article h3 {
+      color: $color-pink;
+    }
+
+   
+    section.content article+article h3 {
+      color: $color-lightgreen;
+    }
+
+    
+    section.content article+article+article h3 {
+      color: $color-lightblue;
+    }
+
+    section.content article .bar{
+     background-color: $color-pink;
+    }
+    section.content article+article .bar{
+      background-color: $color-lightgreen;
+    }
+
+    section.content article+article+article .bar{
+     background-color: $color-lightblue;
+    }
+
+  }
+
+  .main-content-section-secundary::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background-color: #f2f2f2;
+    width: 50%;
+    height: inherit;
+  }
+}
