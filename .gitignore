@@ -1,0 +1,37 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/languages/*
+web/app/languages/themes/
+web/app/languages/plugins/
+web/app/themes/sage/node_modules
+web/app/themes/sage/vendor
+web/app/themes/sage/yarn.lock
+web/app/themes/sage/resources/assets/images/
+web/app/themes/sage/resources/assets/fonts/
+web/app/themes/sage/resources/assets/icons/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+composer.lock
+
+# WP-CLI
+wp-cli.local.yml
+
+.idea
