@@ -5,7 +5,7 @@
     ]))
 
 <div class="icon-what">
-    <span class="icon-whatssapp"></span>
+    <i class="fab fa-whatsapp" ></i>
 </div>
 
 @if($landing->have_posts())

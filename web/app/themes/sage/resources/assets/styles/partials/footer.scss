@@ -164,6 +164,11 @@ footer {
     align-items: center;
     justify-content: space-between;
 
+    .footer-main-logo-primary .custom-logo {
+      width: 50%;
+      height: auto;
+    }
+
     .footer-main-logo-secundary ul {
       width: 150px;
       display: flex;
@@ -216,17 +221,13 @@ div.icon-what {
 
   cursor: pointer;
 
-  .icon-whatssapp {
-    width: 25px;
-    height: 25px;
-
-    background-image: url("../../resources/assets/images/logo-whatsapp.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+  .fab {
+    font-size: 30px;
+    color: $color-lightgreen;
 
     position: absolute;
-    top: 30px - 12px;
-    left: 30px - 12px;
+    top: 30px - 15px;
+    left: 30px - 13px;
 
     z-index: 60;
   }

@@ -9,7 +9,11 @@
         <div class="footer-main-content content">
 
             <div class="footer-main-logo-primary">                
-                <img src="@asset('images/logotipo-2.png')" alt="Rits">
+                @if ( has_custom_logo() )
+                {{the_custom_logo()}}
+                @else
+                {{ $siteName }}
+                  @endif
             </div>
 
             <div class="footer-main-logo-secundary">
