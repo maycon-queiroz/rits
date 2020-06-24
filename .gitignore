@@ -7,8 +7,8 @@ web/app/languages/themes/
 web/app/languages/plugins/
 web/app/themes/sage/node_modules
 web/app/themes/sage/vendor
+web/app/themes/sage/dist
 web/app/themes/sage/yarn.lock
-web/app/themes/sage/resources/assets/images/
 web/app/themes/sage/resources/assets/fonts/
 web/app/themes/sage/resources/assets/icons/
 web/app/upgrade

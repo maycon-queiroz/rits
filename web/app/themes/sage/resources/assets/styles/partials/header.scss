@@ -7,9 +7,7 @@ body {
     width: 78%;
     height: 123px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .flexBetween;
 
     margin: 0px auto;
 
@@ -22,9 +20,7 @@ body {
     }
 
     ul.nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+      @extend .flexBetween;
       align-self: flex-end;
 
 
@@ -41,16 +37,15 @@ body {
           font-family: Muli, sans-serif;
           text-decoration: none;
           color: $color-dark;
+
+          &:hover {
+            text-decoration: none;
+          }
         }
 
-        a:hover {
-          text-decoration: none;
+        +li {
+          margin-left: 80px;
         }
-
-      }
-
-      li+li {
-        margin-left: 80px;
       }
 
     }

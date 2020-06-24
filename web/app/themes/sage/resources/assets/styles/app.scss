@@ -1,6 +1,6 @@
 /** Config */
-@import 'config/variables';
 @import 'config/external';
+@import 'config/variables';
 
 /** Common */
 @import 'common/global';
@@ -10,9 +10,12 @@
 
 /** Partials */
 @import 'partials/header';
-@import 'partials/main-head';
-@import 'partials/content-fisrt';
-@import 'partials/main-content-section';
-@import 'partials/main-content-section-primary';
-@import 'partials/main-content-section-secundary';
+@import 'partials/landing/main-head';
+@import 'partials/landing/content-fisrt';
+@import 'partials/landing/main-content-section';
+@import 'partials/landing/main-content-section-primary';
+@import 'partials/landing/main-content-section-secundary';
 @import 'partials/footer';
+@import 'partials/responsive';
+
+

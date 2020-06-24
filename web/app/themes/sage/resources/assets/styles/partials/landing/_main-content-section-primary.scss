@@ -1,6 +1,6 @@
-main{
+main {
 
-      //*****************************************
+  //*****************************************
   //
   //    SECTION CONTENT PRIMARY
   //
@@ -13,15 +13,16 @@ main{
     header {
       position: relative;
       margin-top: -130px;
-      display: flex;
-      align-self: center;
-      justify-content: space-between;
-      margin-bottom: 250px;
+
+      @extend .flexBetween;
+
+      margin-bottom: 230px;
 
       h1 {
         width: 470px;
         max-width: 470px;
         position: absolute;
+        bottom: -160px;
       }
 
       img {
@@ -45,12 +46,10 @@ main{
 
         .main-content-section-article {
           position: relative;
-          flex-basis: 50%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
 
-          justify-content: center;
+          @extend .flexCenter;
+          flex-basis: 50%;
+          flex-direction: column;
 
           h3 {
             margin: 80px 0 54px;
@@ -61,30 +60,31 @@ main{
           a {
             margin: 0 auto;
             text-align: center;
-            z-index: 50;
+
             position: relative;
             bottom: 10px;
+
+            z-index: 50;
           }
 
           img {
             height: 300px;
             width: 100%;
             max-width: 585px;
+
             z-index: -1;
+
             position: relative;
             bottom: -27px;
           }
 
           .span-colection {
-            // margin-top: 10%;
             display: flex;
             flex-wrap: wrap;
             margin-left: 100px;
 
             .span-itens {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
+              @extend .flexBetween;
 
               margin-bottom: 60px;
 
@@ -107,62 +107,66 @@ main{
           }
         }
       }
-    }
 
-    .section:first-of-type {
-      .main-content-section-article:first-of-type {
-        img {
-          order: -1;
+      &:first-of-type {
+        .main-content-section-article {
+          h3 {
+            margin: 60px 0;
+          }
+
+          .span-colection {
+            margin-top: 0px;
+          }
+
+          &:first-of-type {
+            img {
+              order: -1;
+            }
+
+            a.btn {
+              margin-left: 0;
+            }
+          }
         }
 
-        a.btn {
-          margin-left: 0;
+        &::before {
+          top: unset;
+          bottom: 0;
         }
+
+        +.section {
+          &:before {
+            right: 0;
+            background-color: $color-lightgreen;
+          }
+
+          .content {
+            flex-direction: row-reverse;
+
+            .main-content-section-article h3 {
+              margin-left: 115px;
+            }
+          }
+
+          +.section:before {
+            background-color: $color-violet;
+          }
+        }
+
       }
-    }
 
-    .section:before {
-      content: "";
-      width: 50%;
-      height: 471px;
-      position: absolute;
-      z-index: -1;
-      background-color: $color-lightblue;
-      top: 0em;
-    }
+      &:before {
+        content: "";
+        width: 50%;
+        height: 471px;
 
-    .section:first-of-type::before {
-      top: unset;
-      bottom: 0;
-    }
+        position: absolute;
+        z-index: -1;
+        top: 0em;
 
-    .section:first-of-type {
-      .main-content-section-article {
-        h3 {
-          margin: 60px 0;
-        }
-
-        .span-colection {
-          margin-top: 0px;
-        }
+        background-color: $color-lightblue;
       }
-    }
 
-    .section:first-of-type+.section:before {
-      right: 0;
-      background-color: $color-lightgreen;
-    }
-
-    .section+.section+.section:before {
-      background-color: $color-violet;
-    }
-  }
-
-  .main-content-section-primary .section:first-of-type+.section .content {
-    flex-direction: row-reverse;
-
-    .main-content-section-article h3 {
-      margin-left: 115px;
     }
   }
 }

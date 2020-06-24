@@ -40,12 +40,14 @@
   },
   "require": {
     "php": "^7.2.5",
-    "roots/acorn": "^1.0.1"
+    "roots/acorn": "^1.0.1",
+    "jjgrainger/posttypes": "^2.0",
+    "roots/sage-lib": "~9.0.9",
+    "soberwp/controller": "~2.1.0"
   },
   "require-dev": {
     "filp/whoops": "^2.7",
-    "squizlabs/php_codesniffer": "^3.5",
-    "jjgrainger/posttypes": "^2.0"
+    "squizlabs/php_codesniffer": "^3.5"
   },
   "suggest": {
     "log1x/sage-directives": "A collection of useful Blade directives for WordPress and Sage (^1.0).",

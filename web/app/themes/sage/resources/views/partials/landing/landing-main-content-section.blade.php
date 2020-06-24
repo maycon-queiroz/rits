@@ -7,15 +7,17 @@
 
 @if($landing_section->have_posts())
  
- <div class="main-content-section">
+<div class="main-content-section" >
      <div class="div-svg">
 
         @while($landing_section->have_posts()) @php($landing_section->the_post())
 
-         <div class="main-content-section-article content">
+         <div class="main-content-section-article content" >
+             
              <header class="main-content-section-header">
                 <h1>{{the_title()}}</h1>
              </header>
+
              <div class="div-grid">
                  <div class="main-content-section-video">
                      <img src="{{the_post_thumbnail_url()}}" alt="{{the_title()}}">
@@ -30,6 +32,7 @@
                      {{the_content()}}
                  </div>
              </div>
+
          </div>
 
          @endwhile

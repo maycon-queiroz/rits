@@ -1,6 +1,6 @@
-main{
+main {
 
-    //*****************************************
+  //*****************************************
   //
   //    SECTION CONTENT SECUNDARY
   //
@@ -14,9 +14,7 @@ main{
     header {
       padding-top: 140px;
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend .flexBetween;
 
       position: relative;
       margin-bottom: 80px;
@@ -40,15 +38,16 @@ main{
       gap: 30px;
 
       .main-content-section-article-sec {
+        width: 100%;
         max-width: 370px;
         height: 525px;
         background-color: #fff;
 
         padding: 40px 50px;
 
-        display: flex;
+        @extend .flexCenter;
         flex-direction: column;
-        align-items: center;
+
         position: relative;
 
         box-shadow: 1px 0px 5px -3px black;
@@ -83,44 +82,47 @@ main{
         }
 
       }
+
+      article {
+        h3 {
+          color: $color-dark;
+        }
+
+        .bar {
+          background-color: $color-dark;
+        }
+      }
+
+      article+article {
+        h3 {
+          color: $color-lightgreen;
+        }
+
+        .bar {
+          background-color: $color-lightgreen;
+        }
+      }
+
+      article+article+article {
+        h3 {
+          color: $color-lightblue;
+        }
+
+        .bar {
+          background-color: $color-lightblue;
+        }
+      }
     }
 
-    
-    section.content article h3 {
-      color: $color-pink;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      background-color: #f2f2f2;
+      width: 50%;
+      height: inherit;
     }
-
-   
-    section.content article+article h3 {
-      color: $color-lightgreen;
-    }
-
-    
-    section.content article+article+article h3 {
-      color: $color-lightblue;
-    }
-
-    section.content article .bar{
-     background-color: $color-pink;
-    }
-    section.content article+article .bar{
-      background-color: $color-lightgreen;
-    }
-
-    section.content article+article+article .bar{
-     background-color: $color-lightblue;
-    }
-
-  }
-
-  .main-content-section-secundary::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    background-color: #f2f2f2;
-    width: 50%;
-    height: inherit;
   }
 }

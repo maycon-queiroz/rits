@@ -84,7 +84,7 @@ main {
   //   position: relative;
 
   //   margin: 0 auto;
-  //   background-color: $color-lightgreen;
+  //   background-color: map-get($theme-colors, 'lightgreen');
 
   //   .main-content-first-div {
   //     width: 90%;
@@ -111,7 +111,7 @@ main {
   //         height: 90px;
   //         top: 80px;
 
-  //         background-color: $color-violet;
+  //         background-color: map-get($theme-colors, 'violet');
   //       }
 
   //       header {
@@ -122,7 +122,7 @@ main {
 
   //         h2 {
   //           margin-bottom: 30px;
-  //           color: $color-pink;
+  //           color: $color-dark');
   //         }
   //       }
   //     }
@@ -147,7 +147,7 @@ main {
   //         top: 40%;
   //         left: 40%;
 
-  //         border: 8px solid $color-pink;
+  //         border: 8px solid $color-dark');
 
   //         display: flex;
   //         align-items: center;
@@ -176,7 +176,7 @@ main {
   //     }
 
   //     .main-content-first-img:hover .span-cicle {
-  //       background-color: $color-pink;
+  //       background-color: $color-dark');
   //     }
   //   }
   // }
@@ -378,7 +378,7 @@ main {
   //     height: 471px;
   //     position: absolute;
   //     z-index: -1;
-  //     background-color: $color-lightblue;
+  //     background-color: map-get($theme-colors, 'lightblue');
   //     top: 0em;
   //   }
 
@@ -401,11 +401,11 @@ main {
 
   //   .section:first-of-type+.section:before {
   //     right: 0;
-  //     background-color: $color-lightgreen;
+  //     background-color: map-get($theme-colors, 'lightgreen');
   //   }
 
   //   .section+.section+.section:before {
-  //     background-color: $color-violet;
+  //     background-color: map-get($theme-colors, 'violet');
   //   }
   // }
 
@@ -502,30 +502,30 @@ main {
   //     }
   //   }
 
-    
+
   //   section.content article h3 {
-  //     color: $color-pink;
+  //     color: $color-dark');
   //   }
 
-   
+
   //   section.content article+article h3 {
-  //     color: $color-lightgreen;
+  //     color: map-get($theme-colors, 'lightgreen');
   //   }
 
-    
+
   //   section.content article+article+article h3 {
-  //     color: $color-lightblue;
+  //     color: map-get($theme-colors, 'lightblue');
   //   }
 
   //   section.content article .bar{
-  //    background-color: $color-pink;
+  //    background-color: $color-dark');
   //   }
   //   section.content article+article .bar{
-  //     background-color: $color-lightgreen;
+  //     background-color: map-get($theme-colors, 'lightgreen');
   //   }
 
   //   section.content article+article+article .bar{
-  //    background-color: $color-lightblue;
+  //    background-color: map-get($theme-colors, 'lightblue');
   //   }
 
   // }

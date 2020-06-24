@@ -15,10 +15,10 @@ trim_trailing_whitespace = false
 indent_size = 4
 
 [*.blade.php]
-indent_size = 2
+indent_size = 4
 
 [resources/views/**.php]
-indent_size = 2
+indent_size = 4
 
 [index.php]
-indent_size = 2
+indent_size = 4
