@@ -2,6 +2,7 @@
   Template Name: Custom landingPage
 --}}
 
+
 @extends('layouts.landing')
 
 @section('content')
