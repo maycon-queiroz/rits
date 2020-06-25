@@ -1,0 +1,424 @@
+[
+    {
+        "key": "group_5ef0eedb1b866",
+        "title": "Landing Rits",
+        "fields": [
+            {
+                "key": "field_5ef0eeeb46073",
+                "label": "First title link",
+                "name": "first_title_link",
+                "type": "text",
+                "instructions": "write here the primary title that will be shown (before hovering)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Quero",
+                "placeholder": "Quero",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef0effa46074",
+                "label": "Secund title link",
+                "name": "secund_title_link",
+                "type": "text",
+                "instructions": "write here the secundary title that will be shown (after hovering)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "quero",
+                "placeholder": "quero",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "book"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5ef10797d1b98",
+        "title": "Landing List",
+        "fields": [
+            {
+                "key": "field_5ef107a64e177",
+                "label": "Primary mini-logo",
+                "name": "primary_mini-logo",
+                "type": "image",
+                "instructions": "Imagem before item list",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 200,
+                "max_height": 200,
+                "max_size": 1,
+                "mime_types": "png, jpeg, jpg, svg"
+            },
+            {
+                "key": "field_5ef108a44e178",
+                "label": "Primary item List",
+                "name": "primary_item_list",
+                "type": "text",
+                "instructions": "text item list",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef1090cd7cb6",
+                "label": "Secund mini-logo",
+                "name": "secund_mini-logo",
+                "type": "image",
+                "instructions": "Imagem before item list",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 200,
+                "max_height": 200,
+                "max_size": 1,
+                "mime_types": "png, jpeg, jpg,svg"
+            },
+            {
+                "key": "field_5ef1097fd7cb7",
+                "label": "Secund item List",
+                "name": "secund_item_list",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef109b0d7cb8",
+                "label": "Third mini-logo",
+                "name": "third_mini-logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 200,
+                "max_height": 200,
+                "max_size": 1,
+                "mime_types": "png,jpg,jpeg,svg"
+            },
+            {
+                "key": "field_5ef10a4bd7cb9",
+                "label": "Third item List",
+                "name": "third_item_list",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "book"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_5ef184870a241",
+        "title": "Landing course description",
+        "fields": [
+            {
+                "key": "field_5ef184c346f78",
+                "label": "First Course",
+                "name": "first_course",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef1854046f79",
+                "label": "First Course Logo",
+                "name": "first_course_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 300,
+                "max_height": 300,
+                "max_size": 1,
+                "mime_types": "jpg,jpeg,png"
+            },
+            {
+                "key": "field_5ef18c4e2509d",
+                "label": "1-description",
+                "name": "1-description",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef1863646f7e",
+                "label": "Secund Course",
+                "name": "secund_course",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef1866a46f7f",
+                "label": "Secund Course Logo",
+                "name": "secund_course_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 300,
+                "max_height": 300,
+                "max_size": 1,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5ef18c5c2509e",
+                "label": "2-description",
+                "name": "2-description",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef186a246f81",
+                "label": "Third Course",
+                "name": "third_course",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5ef186b646f82",
+                "label": "Third Course Logo",
+                "name": "third_course_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 50,
+                "min_height": 50,
+                "min_size": "0,01",
+                "max_width": 300,
+                "max_height": 300,
+                "max_size": 1,
+                "mime_types": ""
+            },
+            {
+                "key": "field_5ef18c662509f",
+                "label": "3-description",
+                "name": "3-description",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "book"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
