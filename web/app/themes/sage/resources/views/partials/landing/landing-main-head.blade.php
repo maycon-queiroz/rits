@@ -14,24 +14,25 @@
     @while($landing->have_posts()) @php($landing->the_post())
 
     <article class="main-head-article">
-        <div>
+       
             <header>
                 <h1>{{the_title()}}</h1>
-            </header>
           
-            {{the_excerpt()}}
-            
-            <a href="{{ get_permalink() }}" class="btn">
-                <span class="span-primary">{{the_field('first_title_link')}}</span>
-                <span class="span-secundary d-none">{{the_field('secund_title_link')}}</span>
-            </a>
-
-        </div>
+                {{the_excerpt()}}
+                
+                <a href="{{ get_permalink() }}" class="btn">
+                    <span class="span-primary">{{the_field('first_title_link')}}</span>
+                    <span class="span-secundary d-none">{{the_field('secund_title_link')}}</span>
+                </a>
+            </header>
     </article>
-
-    <img src="{{the_post_thumbnail_url()}}" alt="Quero me inscrever">
-    <span class="arrowdown"></span>
-
+    <div class="container-img">
+        <div class="head-img">
+            <img src="{{the_post_thumbnail_url()}}" alt="Quero me inscrever">
+        </div>
+    
+        <span class="arrowdown"></span>
+    </div>
     @endwhile
 </div>
 @endif

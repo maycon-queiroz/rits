@@ -19,7 +19,10 @@
                  @while($landing_main_footer->have_posts())
                     @php($landing_main_footer->the_post()) 
                      @php($i++)  
-                    <a data-id="{{$i}}" href="#" class="button"> <span>{{the_title()}} <i class="fas fa-arrow-right"></i></span></a>
+                    <a data-id="{{$i}}" href="#" class="button"> <span>{{the_title()}} 
+                        <i class="fas fa-arrow-right icon-show"></i>
+                        <i class="fas fa-arrow-down icon-none"></i>
+                    </span></a>
                  @endwhile
             
                 </div>

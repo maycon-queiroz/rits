@@ -34,3 +34,11 @@
         </div>
 
     </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <a class="close-modal">
+
+            </a>
+        </div>
+    </div>

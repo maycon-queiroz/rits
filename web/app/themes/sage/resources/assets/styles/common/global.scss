@@ -60,6 +60,11 @@ a {
   margin: 0 auto;
 }
 
+.icon-none,
 .d-none {
   display: none;
+}
+
+.icon-show {
+  display: flex;
 }

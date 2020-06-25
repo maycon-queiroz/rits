@@ -1,0 +1,32 @@
+@media (max-width: 1300px) {
+    main {
+        .main-head {
+            .main-head .arrowdown {
+                bottom: 0%;
+            }
+
+            .main-content-section-secundary section {
+                grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)) !important;
+                gap: 15px;
+            }
+
+            .main-content-first {
+                height: 485px;
+            }
+        }
+
+        .main-content-section-secundary {
+            section.content {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+
+                .main-content-section-article-sec {
+                    max-width: unset;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -5,8 +5,7 @@ import "jquery";
 import "bootstrap";
 
 $(document).ready(() => {
-  const falseclick = document.querySelectorAll("a[href]");
-
+  const falseclick = document.querySelectorAll("a[href]");  
   falseclick.forEach(item => {
     item.addEventListener("click", e => {
       e.preventDefault();
@@ -19,32 +18,40 @@ const menuli = document.querySelectorAll(".nav a");
 const lispan = document.querySelectorAll(".footer-ul li span");
 const course = document.querySelector(".footer-selection a");
 
-const menuid = document.querySelectorAll('a[data-id]')
-const listid = document.querySelectorAll('span[data-id]')
-
-menuid.forEach(clickmenu=>{
-    
-    const selectulid = clickmenu.getAttribute("data-id")
-    
-    clickmenu.addEventListener("click", ()=>{
-            
-       listSelected(selectulid)
-    })
-
-})
-
-const listSelected = (params) =>{
-  listid.forEach(lishow =>{
-      lishow.classList.add("d-none")
-
-      if(lishow.getAttribute("data-id") === params){            
-          lishow.classList.remove("d-none")
-       }
-  })
-}
+const menuid = document.querySelectorAll("a[data-id]");
+const listid = document.querySelectorAll("span[data-id]");
 
 
+const menuSection = document.querySelector(".menu-section");
+const menuToggle = menuSection.querySelector(".menu-toggle");
 
+let show = true;
+
+menuToggle.addEventListener("click", () => {
+  menuSection.classList.toggle("on", show);
+
+  document.body.style.overflow = show ? "hidden" : "initial";
+  show = !show;
+});
+
+
+menuid.forEach(clickmenu => {
+  const selectulid = clickmenu.getAttribute("data-id");
+
+  clickmenu.addEventListener("click", () => {
+    listSelected(selectulid);
+  });
+});
+
+const listSelected = params => {
+  listid.forEach(lishow => {
+    lishow.classList.add("d-none");
+
+    if (lishow.getAttribute("data-id") === params) {
+      lishow.classList.remove("d-none");
+    }
+  });
+};
 
 clickbtn.forEach(btn => {
   const spanprimary = btn.querySelector("span.span-primary");
@@ -62,20 +69,26 @@ clickbtn.forEach(btn => {
 });
 
 menuli.forEach(li => {
+  menuAction(li);
+});
+
+function menuAction(li) {
   li.addEventListener("click", li => {
     const id = li.target.getAttribute("href").replace("#", "");
     const divTo = document.querySelector("#" + id).offsetTop;
 
     scrollToIdOnClick(divTo);
+    document.body.style.overflow = show ? "hidden" : "initial";
+    menuSection.classList.toggle("on", show);
   });
-});
+}
 
 function scrollToPosition(to) {
   smoothScrollTo(0, to, 3000);
 }
 
 function scrollToIdOnClick(event) {
-  const to = event + 180;
+  const to = event + 50;
   scrollToPosition(to);
 }
 
@@ -105,3 +118,5 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
+
+
