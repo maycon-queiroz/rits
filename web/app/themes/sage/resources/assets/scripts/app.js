@@ -5,7 +5,7 @@ import "jquery";
 import "bootstrap";
 
 $(document).ready(() => {
-  const falseclick = document.querySelectorAll("a[href]");  
+  const falseclick = document.querySelectorAll("a[href]");
   falseclick.forEach(item => {
     item.addEventListener("click", e => {
       e.preventDefault();
@@ -21,11 +21,14 @@ const course = document.querySelector(".footer-selection a");
 const menuid = document.querySelectorAll("a[data-id]");
 const listid = document.querySelectorAll("span[data-id]");
 
-
 const menuSection = document.querySelector(".menu-section");
 const menuToggle = menuSection.querySelector(".menu-toggle");
 
 let show = true;
+
+menuli.forEach(li => {
+  menuAction(li);
+});
 
 menuToggle.addEventListener("click", () => {
   menuSection.classList.toggle("on", show);
@@ -33,7 +36,6 @@ menuToggle.addEventListener("click", () => {
   document.body.style.overflow = show ? "hidden" : "initial";
   show = !show;
 });
-
 
 menuid.forEach(clickmenu => {
   const selectulid = clickmenu.getAttribute("data-id");
@@ -68,16 +70,13 @@ clickbtn.forEach(btn => {
   });
 });
 
-menuli.forEach(li => {
-  menuAction(li);
-});
-
 function menuAction(li) {
   li.addEventListener("click", li => {
     const id = li.target.getAttribute("href").replace("#", "");
     const divTo = document.querySelector("#" + id).offsetTop;
 
     scrollToIdOnClick(divTo);
+
     document.body.style.overflow = show ? "hidden" : "initial";
     menuSection.classList.toggle("on", show);
   });
@@ -118,5 +117,3 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
-
-
